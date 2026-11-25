@@ -19,7 +19,11 @@
     "supabase",
     "aidap",
     "baas",
-    "volcengine-db-supabase"
+    "mysql",
+    "rds",
+    "dbw",
+    "volcengine-db-supabase",
+    "volcengine-db-mysql"
   ],
   "skills": "./skills/"
 }

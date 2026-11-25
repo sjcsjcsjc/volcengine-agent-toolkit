@@ -156,9 +156,12 @@
       "domain_en": "Database",
       "default": false,
       "description": "Build and operate database-backed applications on Volcengine managed database platforms.",
-      "short_description": "Operate Volcengine AI-native BaaS and PostgreSQL",
-      "keywords": ["数据库", "database", "postgresql", "supabase", "aidap", "baas"],
-      "default_prompts": ["Create and configure a Volcengine Supabase workspace."],
+      "short_description": "Operate Volcengine Supabase and RDS MySQL",
+      "keywords": ["数据库", "database", "postgresql", "supabase", "aidap", "baas", "mysql", "rds", "dbw"],
+      "default_prompts": [
+        "Create and configure a Volcengine Supabase workspace.",
+        "Inspect my Volcengine RDS MySQL instances and diagnose slow queries."
+      ],
       "skills": [
         {
           "name": "volcengine-db-supabase",
@@ -166,6 +169,13 @@
           "summary": "Manage Volcengine AI-native BaaS Supabase workspaces, SQL, Auth, Realtime, and Edge Functions.",
           "summary_zh": "管理火山引擎 AI 原生 BaaS Supabase 工作区、SQL、Auth、Realtime 与 Edge Functions。",
           "keywords": ["supabase", "aidap", "postgresql", "baas", "auth", "realtime", "edge functions", "数据库"]
+        },
+        {
+          "name": "volcengine-db-mysql",
+          "path": "plugins/volcengine-database/skills/volcengine-db-mysql",
+          "summary": "Manage Volcengine RDS MySQL resources, slow logs, and database workbench SQL through ve.",
+          "summary_zh": "通过 ve 管理火山引擎 RDS MySQL 实例、账号、数据库、参数、备份，并查询慢日志和工作台 SQL。",
+          "keywords": ["mysql", "rds", "rdsmysqlv2", "dbw", "云数据库 MySQL", "数据库", "实例", "账号", "参数", "备份", "白名单", "慢查询", "慢日志", "sql"]
         }
       ]
     },

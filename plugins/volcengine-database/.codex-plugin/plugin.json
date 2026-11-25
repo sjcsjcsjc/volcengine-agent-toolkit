@@ -19,12 +19,16 @@
     "supabase",
     "aidap",
     "baas",
-    "volcengine-db-supabase"
+    "mysql",
+    "rds",
+    "dbw",
+    "volcengine-db-supabase",
+    "volcengine-db-mysql"
   ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Volcengine Database",
-    "shortDescription": "Operate Volcengine AI-native BaaS and PostgreSQL",
+    "shortDescription": "Operate Volcengine Supabase and RDS MySQL",
     "longDescription": "Build and operate database-backed applications on Volcengine managed database platforms.",
     "developerName": "Volcengine Team",
     "category": "Cloud",
@@ -34,7 +38,8 @@
       "Write"
     ],
     "defaultPrompt": [
-      "Create and configure a Volcengine Supabase workspace."
+      "Create and configure a Volcengine Supabase workspace.",
+      "Inspect my Volcengine RDS MySQL instances and diagnose slow queries."
     ],
     "websiteURL": "https://github.com/volcengine/volcengine-agent-toolkit",
     "privacyPolicyURL": "https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement",
